@@ -1,0 +1,45 @@
+digraph G {rankdir=LR;
+tu1[shape=ellipse,peripheries=2,fontname=Helvetica,color=green,label="testsuite_liba"];
+{
+tu2[shape=Mrecord,fontname=Helvetica,color=green,label="liba_test_module|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite1.cpp(6)"];
+tu1 -> tu2;
+{
+tu3[shape=Mrecord,fontname=Helvetica,color=green,label="liba_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite1.cpp(7)"];
+tu2 -> tu3;
+{
+tu4[shape=Mrecord,fontname=Helvetica,color=green,label="func_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite1.cpp(8)"];
+tu3 -> tu4;
+{
+tu65536[shape=Mrecord,fontname=Helvetica,color=green,label="test_liba|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite1.cpp(10)"];
+tu4 -> tu65536;
+}
+}
+}
+tu5[shape=Mrecord,fontname=Helvetica,color=green,label="liba_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite2.cpp(6)"];
+tu1 -> tu5;
+{
+tu6[shape=Mrecord,fontname=Helvetica,color=green,label="trivial_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite2.cpp(7)"];
+tu5 -> tu6;
+{
+tu65537[shape=Mrecord,fontname=Helvetica,color=green,label="test_case3|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite2.cpp(9)"];
+tu6 -> tu65537;
+tu65538[shape=Mrecord,fontname=Helvetica,color=green,label="test_case4|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite2.cpp(11)"];
+tu6 -> tu65538;
+}
+tu7[shape=Mrecord,fontname=Helvetica,color=yellow,label="empty_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_suite2.cpp(15)"];
+tu5 -> tu7;
+{
+}
+tu8[shape=Mrecord,fontname=Helvetica,color=green,label="dangerous_suite|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_dangerous.cpp(7)"];
+tu5 -> tu8;
+{
+tu65539[shape=Mrecord,fontname=Helvetica,color=green,label="test_derefence|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_dangerous.cpp(9)"];
+tu8 -> tu65539;
+tu65540[shape=Mrecord,fontname=Helvetica,color=green,label="test_never_return|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_dangerous.cpp(11)"];
+tu8 -> tu65540;
+tu65541[shape=Mrecord,fontname=Helvetica,color=green,label="test_throw_an_exception|C:\Users\colinrawlings\Desktop\dot_parser\test\test_cpp_project\lib_a\tests\test_liba_dangerous.cpp(13)"];
+tu8 -> tu65541;
+}
+}
+}
+}
